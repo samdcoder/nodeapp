@@ -9,6 +9,10 @@ const dummyProfile = {
 }
 
 //returning dummy profile
+
+app.get('/', (req,res) => {
+	res.send("HELLO WORLD!");
+})
 app.get('/profile', (req, res) => {
 	console.log('request on /profile');
 	res.setHeader('Content-Type', 'application/json');
