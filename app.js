@@ -8,6 +8,7 @@ const dummyProfile = {
 	'organization': 'Microsoft'
 }
 
+//returning dummy profile
 app.get('/profile', (req, res) => {
 	res.setHeader('Content-Type', 'application/json');
 	res.json(dummyProfile);
