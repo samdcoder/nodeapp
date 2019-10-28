@@ -10,6 +10,7 @@ const dummyProfile = {
 
 //returning dummy profile
 app.get('/profile', (req, res) => {
+	console.log('request on /profile');
 	res.setHeader('Content-Type', 'application/json');
 	res.json(dummyProfile);
 })
